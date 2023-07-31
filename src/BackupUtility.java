@@ -4,9 +4,8 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
 public class BackupUtility {
-
     public static void createBackup(String directoryPath) {
-        // Создаем новую папку ./backup
+        // Создаем папку ./backup
         File backupDir = new File(directoryPath, "backup");
         backupDir.mkdir();
 
@@ -24,8 +23,7 @@ public class BackupUtility {
             }
         }
     }
-
-    // Пример использования функции
+    // использование функции
     public static void main(String[] args) {
         createBackup("./my_directory");
     }
