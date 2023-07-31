@@ -2,7 +2,6 @@ import java.io.*;
 import java.util.Arrays;
 
 public class Main {
-
     public static void saveGameField(int[][] field, String filename) {
         try (PrintWriter writer = new PrintWriter(filename)) {
             for (int[] row : field) {
@@ -46,7 +45,6 @@ public class Main {
         }
     }
 
-    // Пример использования функций
     public static void main(String[] args) {
         int[][] gameField = {
                 {1, 0, 2},
@@ -55,9 +53,7 @@ public class Main {
         };
 
         saveGameField(gameField, "game_field.txt");
-
         int[][] loadedField = loadGameField("game_field.txt");
-
         System.out.println("Игровое поле:");
         printGameField(loadedField);
     }
